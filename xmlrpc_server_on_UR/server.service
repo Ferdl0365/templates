@@ -1,0 +1,9 @@
+[Unit]
+Description=Pattern Server
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python /programs/xmlrpc_server/remote_functions/server.py
+
+[Install]
+WantedBy=multi-user.target
